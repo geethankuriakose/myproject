@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+#apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: myapp
+  name: myapp-deploy
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      run: myapp
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+  minReadySeconds: 5
+  revisionHistoryLimit: 10
+  template:
+    metadata:
+      labels:
+        run: myapp
+    spec:
+      containers:
+      - image: sosamma2018/myapp:v11
+        name: myapp
+        ports:
+            - containerPort: 8000
+
