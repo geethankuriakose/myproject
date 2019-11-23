@@ -82,7 +82,8 @@ key_name = "${var.ssh_key_name}"
     type        = "ssh"
     user        = "ubuntu"
 
- private_key = "${file("amiuser.pem")}"
+
+ private_key = "${file("${var.ssh_key_name}.pem")}" 
         timeout = "2m"
         agent = false
   }
