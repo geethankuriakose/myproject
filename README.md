@@ -38,19 +38,14 @@ terraform init
 terraform plan
 terraform apply
 
-# deploy your pods into kubernetees cluster
-
+# Deploy your pods into kubernetees cluster
+#master server
 ssh -i "amiuser.pem" ubuntu@ec2-3-19-123-163.us-east-2.compute.amazonaws.com
 
-# list available nodes
-
 kubectl get nodes
-
-# Deploy pods in to  Kubernetees cluster
-
 kubectl  create -f ~/yamls/rollingupdate_v10.yaml
 
-# To watch container creating status
+# To watch container  status
 
 watch kubectl get all -o wide
 kubectl rollout status deployment myapp-deploy  | less
