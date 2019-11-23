@@ -1,4 +1,4 @@
-# Three nodes kubernetes cluster  in AWS using Terraform.
+# Three nodes kubernetes cluster - AWS using Terraform.
 
 # clone project into your local server
 git clone https://github.com/geethankuriakose/myproject.git 
