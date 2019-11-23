@@ -1,17 +1,17 @@
-# Three nodes kubernetes cluster implementation in AWS using Terraform.
+# Three nodes kubernetes cluster  in AWS using Terraform.
 
 # clone project into your local server
 git clone https://github.com/geethankuriakose/myproject.git 
 
 cd cats
-# login into docker hub. 
+# Login into docker hub. 
 
 #Please update your user name & password in scripts/my_password.txt & scripts/docker_login.sh
 #please verify docker service is running in your local server
 
 ./scripts/docker_login.sh 
 
-# build & push docker images to docker hub
+# Build & push docker images into docker hub
 
 ./scripts/build_push_docker_img.sh
 cd ..
