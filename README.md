@@ -24,7 +24,7 @@ sudo cp terraform /usr/local/bin
 
 # Create an user in AWS IAM
 
-create an aws iam user and group with AWSEC2FULLaccess rights  and download your pem file into myproject directory
+create an aws iam user with programatic access and group with AWSEC2FULLaccess rights  and download your pem file into myproject directory
 
 # update following varaibles in myprooject.tf
  
