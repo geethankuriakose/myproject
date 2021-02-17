@@ -13,7 +13,7 @@ cd cats
 
 # Build & push docker images into docker hub
 
-./scripts/build_push_docker_img.sh
+./scripts/build_push_docker_img.sh\
 cd ..
 
 # Download , Install & configure Terraform
