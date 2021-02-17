@@ -41,7 +41,7 @@ terraform plan\
 terraform apply
 
 # Deploy your pods into kubernetees cluster\
-#master server\\
+#master server\
 ssh -i "amiuser.pem" ubuntu@ec2-3-19-123-163.us-east-2.compute.amazonaws.com
 
 kubectl get nodes\
